@@ -123,7 +123,7 @@ public class ESBController {
             System.out.println("Request Body: " + user);
     
             String response = webClient.post()
-                .uri("http://users.railway.internal:5000/app/users/login")
+                .uri("http://usuarios.railway.internal:5000/app/users/login")
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .body(BodyInserters.fromValue(user))
                 .retrieve()
